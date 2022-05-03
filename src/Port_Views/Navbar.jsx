@@ -18,7 +18,10 @@ const NavbarComp = () => {
               Exp/Edu
             </Nav.Link>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
-              <NavDropdown.Item href="https://rongjuni.github.io/Prt_React_Anime_NoRedux/">
+              <NavDropdown.Item
+                href="https://rongjuni.github.io/Prt_React_Anime_NoRedux/"
+                target="_blank"
+              >
                 Project 1 - Japanime
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="proj2">
