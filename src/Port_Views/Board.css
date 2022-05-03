@@ -1,0 +1,12 @@
+.center {
+    text-align: center;
+}
+
+
+.like-button, .pointer{
+    cursor: pointer;
+}
+
+.button{
+    align-items: center;
+}

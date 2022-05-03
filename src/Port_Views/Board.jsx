@@ -1,54 +1,76 @@
 import React, { useState } from "react";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
-function Board() {
-  let [title, setTitle] = useState(["sample1"]);
-  let [content, setContent] = useState(["sample content 1"]);
+import "./Board.css";
+
+const Board = () => {
+  let [title, setTitle] = useState([
+    "Hey, Looks So Great. I'm Mark",
+    "My name is Steve Zobs",
+  ]);
+  let [content, setContent] = useState([
+    "Hey Matthew. This looks so great. I want to hire you for $2M annual salary. Please let me know if you are interested.",
+    "I have always wanted to find a person like you Matthew. Please give me a call. Let's discuss more about your role. Thanks",
+    "",
+  ]);
   let [inputTitle, setInputTitle] = useState("");
   let [inputContent, setInputContent] = useState("");
-  let [like, setLike] = useState([0]);
+  let [like, setLike] = useState([15, 8]);
   let [clicked, setClicked] = useState();
   let [pikaboo, setPikaboo] = useState(false);
 
-  function inputPosting() {
-    let copyTitle = [...title];
-    copyTitle.unshift(inputTitle);
-    setTitle(copyTitle);
+  const inputPosting = () => {
+    if (inputTitle.length >= 1 && inputContent.length >= 1) {
+      let copyTitle = [...title];
+      copyTitle.unshift(inputTitle);
+      setTitle(copyTitle);
 
-    let copyContent = [...content];
-    copyContent.unshift(inputContent);
-    setContent(copyContent);
+      let copyContent = [...content];
+      copyContent.unshift(inputContent);
+      setContent(copyContent);
 
-    let copyLike = [...like];
-    copyLike.unshift(0);
-    setLike(copyLike);
-  }
+      let copyLike = [...like];
+      copyLike.unshift(0);
+      setLike(copyLike);
+
+      setInputTitle("");
+      setInputContent("");
+    }
+  };
 
   return (
     <div>
-      <h4>Leave your comments</h4>
+      <h2 className="center" style={{ margin: "20px" }}>
+        Please let me know you visited ! 😊 Any suggestion to improve this blog
+        would be appreciated
+      </h2>
       <hr />
 
       {title.map((val, ind) => {
         return (
           <div
+            className="pointer"
             onClick={() => {
               setClicked(ind);
             }}
           >
-            <h3>
+            <h5>
               {val}
-              <button
-                className="button"
+
+              {/* Need work to prevent multiple click and backend linking */}
+              {/* <span
+                className="like-button"
                 onClick={() => {
                   let copyLikeNum = [...like];
                   copyLikeNum[ind]++;
                   setLike(copyLikeNum);
                 }}
               >
-                ❤️
-              </button>
-              <span> {like[ind]}</span>
-            </h3>
+                {"  "}
+                👍
+              </span> */}
+
+              {/* <span>{like[ind]} liked</span> */}
+            </h5>
             <hr />
           </div>
         );
@@ -64,7 +86,7 @@ function Board() {
             }}
           />
         </InputGroup>
-        <InputGroup>
+        <InputGroup className="mb-3">
           <InputGroup.Text>Contents</InputGroup.Text>
           <FormControl
             required
@@ -75,55 +97,40 @@ function Board() {
             aria-label="With textarea"
           />
         </InputGroup>
-        {/* <input
-          type="text"
-          required
-          onChange={(e) => {
-            setInputTitle(e.target.value);
-          }}
-        />
-        <br />
-        <textarea
-          type="text"
-          width="500"
-          required
-          onChange={(e) => {
-            setInputContent(e.target.value);
-          }}
-        /> */}
-        <Button variant="outline-primary" onClick={inputPosting}>
-          Submit
-        </Button>
-        {/* <button onClick={inputPosting}>Submit</button> */}
       </div>
 
-      <Button
-        variant="outline-primary"
-        onClick={() => {
-          setPikaboo(!pikaboo);
-        }}
-      >
-        Detail
-      </Button>
-      {/* <button
-        onClick={() => {
-          setPikaboo(!pikaboo);
-        }}
-      >
-        Detail
-      </button> */}
+      <div className="center">
+        <Button
+          variant="outline-primary"
+          className="center"
+          onClick={inputPosting}
+        >
+          Submit
+        </Button>
+        <hr />{" "}
+        <Button
+          variant="outline-success"
+          className="center"
+          onClick={() => {
+            setPikaboo(!pikaboo);
+          }}
+        >
+          Detail / Hide
+        </Button>
+        <br />
+        <br />
+      </div>
 
-      {pikaboo === true ? (
+      {pikaboo === false ? (
         <Modal title={title} content={content} clicked={clicked}></Modal>
       ) : null}
-      {/* ending line.. */}
-    </div>
-  );
-}
+    </div> // div ending line
+  ); // return ending line
+}; // board ending line
 
 function Modal(props) {
   return (
-    <div>
+    <div className="center">
       <h2> {props.title[props.clicked]} </h2>
       <p> {props.content[props.clicked]} </p>
     </div>
