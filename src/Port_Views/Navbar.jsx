@@ -19,7 +19,7 @@ const NavbarComp = () => {
             </Nav.Link>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item
-                href="https://rongjuni.github.io/Prt_React_Anime_NoRedux/"
+                href="https://japanime.herokuapp.com/"
                 target="_blank"
               >
                 Project 1 - Japanime
@@ -30,8 +30,11 @@ const NavbarComp = () => {
               <NavDropdown.Item as={Link} to="proj3">
                 Project 3 - todo list
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="proj4">
-                Proejct 4 - pokemon
+              <NavDropdown.Item
+                target="_blank"
+                href="https://pokemondictionary.herokuapp.com/"
+              >
+                Proejct 4 - Pokemon
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/Board">
