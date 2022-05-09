@@ -39,10 +39,11 @@
 }
 
 .icons{
-text-align: center;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .icons img{
-    width: 3.5rem;
+    width: 2.8rem;
     margin: 0 1rem 0 0 ;
 }
