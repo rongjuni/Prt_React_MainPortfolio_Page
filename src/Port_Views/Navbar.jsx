@@ -22,17 +22,23 @@ const NavbarComp = () => {
               >
                 Japanime
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="proj2">
-                Project 2 - Nuel Express (WIP)
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="proj3">
-                Project 3 - todo list (WIP)
-              </NavDropdown.Item>
+
               <NavDropdown.Item
                 target="_blank"
                 href="https://pokemondictionary.herokuapp.com/"
               >
                 Pokemon
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                target="_blank"
+                href="https://numbermemorygame.herokuapp.com/"
+              >
+                Memory Game
+              </NavDropdown.Item>
+
+              <NavDropdown.Item as={Link} to="proj2">
+                Project 2 - Nuel Express (WIP)
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/Board">
