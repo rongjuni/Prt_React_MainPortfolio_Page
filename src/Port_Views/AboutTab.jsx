@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./AboutTab.css";
+import brainImg from "./brain_pic.png";
 
 const AboutTab = () => {
   return (
@@ -48,6 +49,16 @@ const AboutTab = () => {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
         </div>
+      </div>
+
+      <div className="IQtestResult">
+        <a
+          href="https://iq-society.com/Report?code=1652726053718GZDHNYG3VP4F5TA2"
+          target="__blank"
+        >
+          Matt's IQ Test Result<br></br>
+          <img src={brainImg} alt="brain img" />
+        </a>
       </div>
 
       <div className="aboutMe intro" id="introStory">

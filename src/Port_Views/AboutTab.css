@@ -8,6 +8,26 @@
     margin-bottom: 15rem;
 }
 
+.IQtestResult{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.IQtestResult a{
+    text-decoration:none;
+    color: black;
+}
+
+
+.IQtestResult img{
+    width: 10rem;
+}
+
+.IQtestResult img:hover{
+    width: 9rem;
+    
+}
+
 
 .intro p{
     margin-top: 2rem;

@@ -14,7 +14,6 @@ const Board = () => {
   ]);
   let [inputTitle, setInputTitle] = useState("");
   let [inputContent, setInputContent] = useState("");
-  let [like, setLike] = useState([15, 8]);
   let [clicked, setClicked] = useState();
   let [pikaboo, setPikaboo] = useState(false);
 
@@ -28,10 +27,6 @@ const Board = () => {
       copyContent.unshift(inputContent);
       setContent(copyContent);
 
-      let copyLike = [...like];
-      copyLike.unshift(0);
-      setLike(copyLike);
-
       setInputTitle("");
       setInputContent("");
     }
@@ -39,10 +34,11 @@ const Board = () => {
 
   return (
     <div>
-      <h2 className="center" style={{ margin: "20px" }}>
-        Please let me know you visited ! 😊 Any suggestion to improve this blog
-        would be appreciated
-      </h2>
+      <hr />
+      <h3 className="center" style={{ margin: "20px" }}>
+        Please let me know that you visited ! 😊 <br />
+        Any suggestion to improve this blog would be appreciated
+      </h3>
       <hr />
 
       {title.map((val, ind) => {
