@@ -4,13 +4,12 @@ import "./Board.css";
 
 const Board = () => {
   let [title, setTitle] = useState([
-    "Hey, Looks So Great. I'm Mark",
-    "My name is Steve Zobs",
+    "Hey Matt, Your blog looks Great. By the way, I'm Mark Juckerberg",
+    "My name is Steve Zobs.",
   ]);
   let [content, setContent] = useState([
-    "Hey Matthew. This looks so great. I want to hire you for $2M annual salary. Please let me know if you are interested.",
+    "Hey. I want to hire you. Let's discuss further about your salary and benefit package.",
     "I have always wanted to find a person like you Matthew. Please give me a call. Let's discuss more about your role. Thanks",
-    "",
   ]);
   let [inputTitle, setInputTitle] = useState("");
   let [inputContent, setInputContent] = useState("");
