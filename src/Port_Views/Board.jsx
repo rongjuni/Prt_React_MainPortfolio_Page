@@ -80,6 +80,7 @@ const Board = () => {
             onChange={(e) => {
               setInputTitle(e.target.value);
             }}
+            value={inputTitle}
           />
         </InputGroup>
         <InputGroup className="mb-3">
@@ -89,6 +90,7 @@ const Board = () => {
             onChange={(e) => {
               setInputContent(e.target.value);
             }}
+            value={inputContent}
             as="textarea"
             aria-label="With textarea"
           />
