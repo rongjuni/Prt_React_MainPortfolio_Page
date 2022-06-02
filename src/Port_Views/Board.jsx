@@ -33,36 +33,44 @@ const Board = () => {
   };
 
   return (
-    <div>
-      <hr />
-      <h3 className="center" style={{ margin: "20px" }}>
-        Please let me know that you visited ! 😊 <br />
-        Any suggestion to improve this blog would be appreciated
-      </h3>
-      <hr />
+    <div className="boardContainer">
+      <div className="boardWidth">
+        <hr />
+        <h3 className="center" style={{ margin: "20px" }}>
+          Please let me know that you visited ! 😊 <br />
+          Any suggestion to improve this blog would be appreciated
+        </h3>
+        <hr />
+      </div>
 
-      <hr />
+      <div className="boardWidth">
+        <hr />
+        {title.map((val, ind) => {
+          return (
+            <div
+              className="pointer"
+              onClick={() => {
+                setClicked(ind);
+                setPikaboo(!pikaboo);
+              }}
+            >
+              <h5>{val}</h5>
 
-      {title.map((val, ind) => {
-        return (
-          <div
-            className="pointer"
-            onClick={() => {
-              setClicked(ind);
-              setPikaboo(!pikaboo);
-            }}
-          >
-            <h5>{val}</h5>
+              {ind === clicked && pikaboo === true ? (
+                <Modal
+                  title={title}
+                  content={content}
+                  clicked={clicked}
+                ></Modal>
+              ) : null}
+              <hr />
+            </div>
+          );
+        })}
+      </div>
 
-            {ind === clicked && pikaboo === true ? (
-              <Modal title={title} content={content} clicked={clicked}></Modal>
-            ) : null}
-            <hr />
-          </div>
-        );
-      })}
-
-      <div>
+      {/* input field starts here */}
+      <div className="boardWidth">
         <InputGroup className="mb-3">
           <InputGroup.Text>Title</InputGroup.Text>
           <FormControl
@@ -80,6 +88,11 @@ const Board = () => {
             onChange={(e) => {
               setInputContent(e.target.value);
             }}
+            onKeyPress={(e) => {
+              if (e.charCode === 13) {
+                inputPosting();
+              }
+            }}
             value={inputContent}
             as="textarea"
             aria-label="With textarea"
@@ -88,18 +101,16 @@ const Board = () => {
       </div>
 
       <div className="center">
-        <form>
-          <Button
-            variant="outline-primary"
-            className="center"
-            onClick={inputPosting}
-          >
-            Submit
-          </Button>
-        </form>
-        <br />
-        <br />
+        <Button
+          variant="outline-primary"
+          className="center"
+          onClick={inputPosting}
+        >
+          Submit
+        </Button>
       </div>
+      <br />
+      <br />
     </div> // div ending line
   ); // return ending line
 }; // board ending line
