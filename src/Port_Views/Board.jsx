@@ -4,12 +4,12 @@ import "./Board.css";
 
 const Board = () => {
   let [title, setTitle] = useState([
-    "Hey Matt, Your blog looks Great. By the way, I'm Mark Juckerberg",
-    "My name is Steve Zobs.",
+    "Hey Matt. This is Mark Juckerperg",
+    "Message from Steve Zobs.",
   ]);
   let [content, setContent] = useState([
-    "Hey. I want to hire you. Let's discuss further about your salary and benefit package.",
-    "I have always wanted to find a person like you Matthew. Please give me a call. Let's discuss more about your role. Thanks",
+    "I've tried to reach you multiple times. Please call me back. I need your help on current project Facebool. Thanks",
+    "I have always wanted to find a person like you Matt. Please give me a call. Let's discuss more about your role. Thanks",
   ]);
   let [inputTitle, setInputTitle] = useState("");
   let [inputContent, setInputContent] = useState("");
@@ -40,10 +40,7 @@ const Board = () => {
         Any suggestion to improve this blog would be appreciated
       </h3>
       <hr />
-      {/* 
-      {pikaboo === false ? (
-        <Modal title={title} content={content} clicked={clicked}></Modal>
-      ) : null} */}
+
       <hr />
 
       {title.map((val, ind) => {
@@ -92,40 +89,28 @@ const Board = () => {
       </div>
 
       <div className="center">
-        <Button
-          variant="outline-primary"
-          className="center"
-          onClick={inputPosting}
-        >
-          Submit
-        </Button>
-        {/* <hr />{" "}
-        <Button
-          variant="outline-success"
-          className="center"
-          onClick={() => {
-            setPikaboo(!pikaboo);
-          }}
-        >
-          Detail / Hide
-        </Button> */}
+        <form>
+          <Button
+            variant="outline-primary"
+            className="center"
+            onClick={inputPosting}
+          >
+            Submit
+          </Button>
+        </form>
         <br />
         <br />
       </div>
-
-      {/* {pikaboo === false ? (
-        <Modal title={title} content={content} clicked={clicked}></Modal>
-      ) : null} */}
     </div> // div ending line
   ); // return ending line
 }; // board ending line
 
 function Modal(props) {
   return (
-    <div className="center">
+    <div>
       <br />
       {/* <h4> {props.title[props.clicked]} </h4> */}
-      <p> {props.content[props.clicked]} </p>
+      <p style={{ paddingLeft: "15px" }}> {props.content[props.clicked]} </p>
     </div>
   );
 }
