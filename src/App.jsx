@@ -6,6 +6,7 @@ import NavbarComp from "./Port_Views/Navbar";
 import AboutTab from "./Port_Views/AboutTab";
 import Home from "./Port_Views/Home";
 import Board from "./Port_Views/Board";
+import WIP from "./Port_Views/Wip";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<AboutTab />} />
         <Route exact path="/Board" element={<Board />} />
+        <Route exact path="/wip" element={<WIP />} />
       </Routes>
     </Router>
   );

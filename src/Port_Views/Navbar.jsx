@@ -17,9 +17,6 @@ const NavbarComp = () => {
 
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item
-                onClick={() => {
-                  alert("clicked");
-                }}
                 href="https://japanime.herokuapp.com/"
                 target="_blank"
               >
@@ -40,11 +37,11 @@ const NavbarComp = () => {
                 Memory Game (React)
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="proj2">
+              <NavDropdown.Item as={Link} to="/wip">
                 FootRockers (Coming Soon)
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="proj2">
+              <NavDropdown.Item as={Link} to="/wip">
                 Nuel Express (Coming Soon)
               </NavDropdown.Item>
             </NavDropdown>
