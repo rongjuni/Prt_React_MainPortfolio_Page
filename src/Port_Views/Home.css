@@ -9,24 +9,24 @@
 
 
 .mainPageContainer{
-    background-image: url("./sky.jpg");
+    /* background-image: url("./sky.jpg"); */
+    background-image: url("./backgroundpic.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    opacity: 0.7;
     text-align: center;
 }
 
 .text1{
+    /* color:rgba(240, 248, 255, 0.507); */
     color:aliceblue;
-    padding-top: 10%;
-
-
+    padding-top: 1%;
+    margin: 0;
 }
-.text2{
+.text2, .text3{
+    /* color:rgba(240, 248, 255, 0.507); */
     color:aliceblue;
-    padding-top: 3%;
-}
-.text3{
-    color:aliceblue;
-    padding-top: 3%;
+    margin: 0;
+    padding: 0;
 }

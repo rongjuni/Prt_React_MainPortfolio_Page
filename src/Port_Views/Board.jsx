@@ -16,6 +16,7 @@ const Board = () => {
   let [clicked, setClicked] = useState();
   let [pikaboo, setPikaboo] = useState(false);
 
+  // New Posting //
   const inputPosting = () => {
     if (inputTitle.length >= 1 && inputContent.length >= 1) {
       let copyTitle = [...title];
@@ -39,6 +40,11 @@ const Board = () => {
         Any suggestion to improve this blog would be appreciated
       </h3>
       <hr />
+      {/* 
+      {pikaboo === false ? (
+        <Modal title={title} content={content} clicked={clicked}></Modal>
+      ) : null} */}
+      <hr />
 
       {title.map((val, ind) => {
         return (
@@ -46,26 +52,15 @@ const Board = () => {
             className="pointer"
             onClick={() => {
               setClicked(ind);
+              setPikaboo(!pikaboo);
+              console.log(pikaboo);
             }}
           >
-            <h5>
-              {val}
+            <h5>{val}</h5>
 
-              {/* Need work to prevent multiple click and backend linking */}
-              {/* <span
-                className="like-button"
-                onClick={() => {
-                  let copyLikeNum = [...like];
-                  copyLikeNum[ind]++;
-                  setLike(copyLikeNum);
-                }}
-              >
-                {"  "}
-                👍
-              </span> */}
-
-              {/* <span>{like[ind]} liked</span> */}
-            </h5>
+            {ind === clicked && pikaboo === false ? (
+              <Modal title={title} content={content} clicked={clicked}></Modal>
+            ) : null}
             <hr />
           </div>
         );
@@ -104,7 +99,7 @@ const Board = () => {
         >
           Submit
         </Button>
-        <hr />{" "}
+        {/* <hr />{" "}
         <Button
           variant="outline-success"
           className="center"
@@ -113,14 +108,14 @@ const Board = () => {
           }}
         >
           Detail / Hide
-        </Button>
+        </Button> */}
         <br />
         <br />
       </div>
 
-      {pikaboo === false ? (
+      {/* {pikaboo === false ? (
         <Modal title={title} content={content} clicked={clicked}></Modal>
-      ) : null}
+      ) : null} */}
     </div> // div ending line
   ); // return ending line
 }; // board ending line
@@ -128,7 +123,8 @@ const Board = () => {
 function Modal(props) {
   return (
     <div className="center">
-      <h2> {props.title[props.clicked]} </h2>
+      <br />
+      {/* <h4> {props.title[props.clicked]} </h4> */}
       <p> {props.content[props.clicked]} </p>
     </div>
   );

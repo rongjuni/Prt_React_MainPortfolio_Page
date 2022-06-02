@@ -24,7 +24,7 @@
 }
 
 .IQtestResult img:hover{
-    width: 9rem;
+    width: 11rem;
     
 }
 
@@ -32,6 +32,8 @@
 .intro p{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    min-width: fit-content;
+    
 }
 
 .achDiv{
@@ -44,7 +46,7 @@
 
 
 .intro{
-    width: 60%;
+    max-width: 80%;
     margin : 18rem auto;
 }
 

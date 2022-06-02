@@ -15,6 +15,13 @@ const AboutTab = () => {
           Me
         </Button>{" "}
         <Button
+          href="#introTitle"
+          variant="outline-secondary"
+          className="buttonFont"
+        >
+          IQ
+        </Button>{" "}
+        <Button
           href="#introStory"
           variant="outline-secondary"
           className="buttonFont"
@@ -42,44 +49,75 @@ const AboutTab = () => {
         <h3>Software Developer</h3>
 
         <div className="icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+            alt="devicon-react"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+            alt="devicon-html"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+            alt="devicon-css"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt="devicon-javascript"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+            alt="devicon-mongoDB"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="devicon-nodeJS"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
+            alt="devicon-express"
+          />
         </div>
       </div>
 
       <div className="IQtestResult">
-        <a
-          href="https://iq-society.com/Report?code=1652726053718GZDHNYG3VP4F5TA2"
-          target="__blank"
-        >
-          Matt's IQ Test Result<br></br>
-          <img src={brainImg} alt="brain img" />
-        </a>
+        <h3>
+          <a
+            href="https://iq-society.com/Report?code=1652726053718GZDHNYG3VP4F5TA2"
+            target="__blank"
+          >
+            IQ Test Result<br></br>
+            <img src={brainImg} alt="brain img" />
+          </a>
+        </h3>
       </div>
 
       <div className="aboutMe intro" id="introStory">
         <h3>MY STORY</h3>
         <p>
-          I know what you are going to say.. And yes. I had to chagne because I
-          like it much more. I chose accounting as a student who liked math and
-          physics because I was informed that accounting is all math related
-          field with high job security 😁.
+          I know what you are going to ask me if you have noticed the titles
+          next to my name.... But yes. I want to be a developer dreadfully. I
+          was a student who liked math and physics in middle and high school.
+          When I had to pick a major at college, I was informed that
+          "Accounting" would be the best choice for me since they are playing
+          with numbers. I believed that until now as you see my license and
+          additional degree.
         </p>
         <p>
-          However, I happend to experience some of SQL at work to pull out
-          financial data and manipulate to the proper format that we needed. It
-          was interesting. I started researching and started learning coding and
-          immediately realized that it is what I was looking for.
+          However, I happend to experience some of SQL at current company to
+          extract financial data, and it was really interesting. I decided to
+          learn more and started studying other programming languages such as
+          Javascript, React and NodeJS. It was enjoyable process. I enjoy time
+          to deeply think. I even pay to purchase brain-teasing games to rack my
+          brain but in developing environment, I can get unlimited number of
+          brain-teasing tasks for FREE 😁.
         </p>
         <p>
-          I enjoy time focusing on things and thinking deeply. I also enjoy
-          brain teasing games like riddles or room-escaping in my freetime, and
-          I like developing because it's free brain teasing game that I don't
-          have to pay to App store or room escape.
+          As I am in a career transition process, I am eager to learn more and
+          willing to spend extra hours to study and contribute to a team. I am a
+          fast learner and catch things quickly. Even though I do not have all
+          the answers at the moment, I will make it happen and come up with
+          solutions.
         </p>
       </div>
 
@@ -110,41 +148,48 @@ const AboutTab = () => {
         </div>
       </div>
 
+      {/* Work Experience */}
       <div className="aboutMe workExperience" id="workExperience">
         <h3 className="compName">SOSI</h3>
         <p>
-          Government Contracting Company <br />
-          Sr. Accountant <br /> Utilze MySQL to extract and combine financial
-          data to analyze and provide to management in proper format
+          <h5>Government Contracting Company </h5>
+          <h6>Sr. Accountant</h6>
+          <li>
+            Utilzed Microsoft SQL to extract and convert financial data to a
+            meaningful information to assist the management for their decision
+            making.
+          </li>
         </p>
 
         <h3 className="compName">Lincoln Property Company</h3>
         <p>
-          Property Management Company
-          <br />
-          Project Accountant
-          <br />
-          Prepared/provided monthly financial statements and executive summary
-          to multiple clients in my portfolio on time
+          <h5>Property Management Company</h5>
+          <h6>Project Accountant</h6>
+          <li>
+            Prepared/provided monthly financial statements and executive summary
+            to clients on time.
+          </li>
+          <li>
+            Worked in a team of 7 and deal with multiple clients in portfolio to
+            satisfy their needs.
+          </li>
         </p>
 
         <h3 className="compName">Pragmatics Inc</h3>
         <p>
-          Government Contracting Company
-          <br />
-          Accountant
-          <br />
-          Performed Reconciliation / Billing / Journal Entries / Review
+          <h5>Government Contracting Company</h5>
+          <h6>Accountant</h6>
+          <li>Performed Reconciliation / Billing / Journal Entries / Review</li>
         </p>
 
         <h3 className="compName">MSCPA</h3>
         <p>
-          Public Accounting Firm
-          <br />
-          Tax Accountnat
-          <br />
-          Lead team of 4 to provide best quality of tax consulting and tax
-          returns preparation services to clients.
+          <h5>Public Accounting Firm</h5>
+          <h6>Tax Accountnat</h6>
+          <li>
+            Lead team of 4 to provide best quality of tax consulting and tax
+            return preparation services to clients.
+          </li>
         </p>
       </div>
     </div> //ending div

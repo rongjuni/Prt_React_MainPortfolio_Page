@@ -6,7 +6,7 @@ const NavbarComp = () => {
     <Navbar bg="light" variant="light" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          Matt Seo
+          🏚️
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -17,28 +17,35 @@ const NavbarComp = () => {
 
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item
+                onClick={() => {
+                  alert("clicked");
+                }}
                 href="https://japanime.herokuapp.com/"
                 target="_blank"
               >
-                Japanime
+                Japanime (React)
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 target="_blank"
                 href="https://pokemondictionary.herokuapp.com/"
               >
-                Pokemon
+                Pokemon (React)
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 target="_blank"
                 href="https://numbermemorygame.herokuapp.com/"
               >
-                Memory Game
+                Memory Game (React)
               </NavDropdown.Item>
 
               <NavDropdown.Item as={Link} to="proj2">
-                Project 2 - Nuel Express (WIP)
+                FootRockers (Coming Soon)
+              </NavDropdown.Item>
+
+              <NavDropdown.Item as={Link} to="proj2">
+                Nuel Express (Coming Soon)
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/Board">
