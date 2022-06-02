@@ -50,12 +50,11 @@ const Board = () => {
             onClick={() => {
               setClicked(ind);
               setPikaboo(!pikaboo);
-              console.log(pikaboo);
             }}
           >
             <h5>{val}</h5>
 
-            {ind === clicked && pikaboo === false ? (
+            {ind === clicked && pikaboo === true ? (
               <Modal title={title} content={content} clicked={clicked}></Modal>
             ) : null}
             <hr />
