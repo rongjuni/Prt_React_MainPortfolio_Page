@@ -15,14 +15,14 @@ const NavbarComp = () => {
               About Me
             </Nav.Link>
 
-            <NavDropdown.Item
-              target="_blank"
-              href="https://findpokemon.vercel.app//"
-            >
-              Pokemon (React)
-            </NavDropdown.Item>
-
             <NavDropdown title="Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item
+                target="_blank"
+                href="https://findpokemon.vercel.app//"
+              >
+                Pokemon (React)
+              </NavDropdown.Item>
+
               <NavDropdown.Item
                 href="http://japanime.vercel.app"
                 target="_blank"
