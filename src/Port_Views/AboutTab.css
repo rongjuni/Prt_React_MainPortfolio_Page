@@ -5,7 +5,7 @@
 
 .aboutMe {
     text-align: center;
-    margin-bottom: 15rem;
+    /* margin-bottom: 1rem; */
 }
 
 .IQtestResult{
@@ -28,10 +28,13 @@
     
 }
 
+.bot-mar{
+    margin: auto auto 10rem auto;
+}
 
 .intro p{
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     min-width: fit-content;
     
 }
@@ -47,9 +50,15 @@
 
 .intro{
     max-width: 80%;
-    margin : 18rem auto;
+    margin-top: 3.5rem;
+    /* margin : 18rem auto; */
 }
 
+
+.socialIcons{
+    text-align: center;
+    margin-top: 1rem;   
+}
 
 .compName{
     margin-top: 3.5rem;

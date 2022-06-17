@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./AboutTab.css";
 import brainImg from "./brain_pic.png";
+import github from "./pictures/github.png";
+import linkedin from "./pictures/linkedin.png";
 
 const AboutTab = () => {
   return (
@@ -44,7 +46,23 @@ const AboutTab = () => {
         </Button>{" "}
       </div>
 
-      <div className="aboutMe introTitle" id="introTitle">
+      <div className="socialIcons bot-mar" id="introTitle">
+        <span>
+          <a href="https://github.com/rongjuni" target="blank">
+            <img width="40rem" src={github} alt="github_icon" />
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://www.linkedin.com/in/matthew-seo-cpa-mba-71349bb9/"
+            target="blank"
+          >
+            <img width="40rem" src={linkedin} alt="linkedin_icon" />
+          </a>
+        </span>
+      </div>
+
+      <div className="aboutMe introTitle bot-mar" id="introTitle">
         <h1>Matthew Seo CPA MBA</h1>
         <h3>Software Developer</h3>
 
@@ -80,7 +98,7 @@ const AboutTab = () => {
         </div>
       </div>
 
-      <div className="IQtestResult">
+      <div className="IQtestResult bot-mar">
         <h3>
           <a
             href="https://iq-society.com/Report?code=1652726053718GZDHNYG3VP4F5TA2"
@@ -92,7 +110,7 @@ const AboutTab = () => {
         </h3>
       </div>
 
-      <div className="aboutMe intro" id="introStory">
+      <div className="aboutMe intro bot-mar" id="introStory">
         <h3>MY STORY</h3>
         <p>
           I know what you are going to ask me if you have noticed the titles
@@ -121,7 +139,7 @@ const AboutTab = () => {
         </p>
       </div>
 
-      <div className="aboutMe education" id="education">
+      <div className="aboutMe education bot-mar" id="education">
         <h3>ACHIEVEMENTS</h3>
         <div className="achDiv">
           <h5>University of Illinois Urbana-Champaign</h5>
@@ -149,7 +167,7 @@ const AboutTab = () => {
       </div>
 
       {/* Work Experience */}
-      <div className="aboutMe workExperience" id="workExperience">
+      <div className="aboutMe workExperience bot-mar" id="workExperience">
         <h3 className="compName">SOSI</h3>
         <p>
           <h5>Government Contracting Company </h5>
