@@ -17,7 +17,7 @@ const NavbarComp = () => {
 
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item
-                href="https://japanime.herokuapp.com/"
+                href="http://japanime.vercel.app"
                 target="_blank"
               >
                 Japanime (React)
@@ -25,14 +25,14 @@ const NavbarComp = () => {
 
               <NavDropdown.Item
                 target="_blank"
-                href="https://pokemondictionary.herokuapp.com/"
+                href="https://findpokemon.vercel.app//"
               >
                 Pokemon (React)
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 target="_blank"
-                href="https://numbermemorygame.herokuapp.com/"
+                href="https://momorykornum.vercel.app/"
               >
                 Memory Game (React)
               </NavDropdown.Item>
