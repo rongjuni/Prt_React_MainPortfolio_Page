@@ -1,7 +1,10 @@
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import github from "./pictures/github.png";
+import linkedin from "./pictures/linkedin.png";
 
 const NavbarComp = () => {
+  let githubLink = "https://github.com/rongjuni";
   return (
     <Navbar bg="light" variant="light" expand="lg">
       <Container>
@@ -50,6 +53,18 @@ const NavbarComp = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <div>
+          <a href={githubLink} target="blank" style={{ marginRight: "1rem" }}>
+            <img src={github} width="30rem" alt="githubicon"></img>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/matthew-seo-cpa-mba-71349bb9/"
+            target="blank"
+          >
+            <img src={linkedin} width="30rem" alt="githubicon" />
+          </a>
+        </div>
       </Container>
     </Navbar>
   );
