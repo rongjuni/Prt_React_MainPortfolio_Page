@@ -53,7 +53,7 @@ const NavbarComp = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <div>
+        <span>
           <a href={githubLink} target="blank" style={{ marginRight: "1rem" }}>
             <img src={github} width="30rem" alt="githubicon"></img>
           </a>
@@ -64,7 +64,7 @@ const NavbarComp = () => {
           >
             <img src={linkedin} width="30rem" alt="githubicon" />
           </a>
-        </div>
+        </span>
       </Container>
     </Navbar>
   );
