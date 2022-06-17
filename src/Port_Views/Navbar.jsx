@@ -42,9 +42,9 @@ const NavbarComp = () => {
                 FootRockers (Coming Soon)
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/wip">
+              {/* <NavDropdown.Item as={Link} to="/wip">
                 Nuel Express (Coming Soon)
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link as={Link} to="/Board">
               Board
