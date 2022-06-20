@@ -2,7 +2,6 @@ import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const NavbarComp = () => {
-  let githubLink = "https://github.com/rongjuni";
   return (
     <Navbar bg="light" variant="light" expand="lg">
       <Container>
@@ -33,7 +32,7 @@ const NavbarComp = () => {
 
               <NavDropdown.Item
                 target="_blank"
-                href="https://momorykornum.vercel.app/"
+                href="http://numbermemorygame.herokuapp.com"
               >
                 Memory Game (React)
               </NavDropdown.Item>
