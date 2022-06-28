@@ -18,7 +18,14 @@ const NavbarComp = () => {
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item
                 target="_blank"
-                href="https://findpokemon.vercel.app//"
+                href="https://deploygossip.ue.r.appspot.com"
+              >
+                GossipCOM (NodeJS)
+              </NavDropdown.Item>
+
+              <NavDropdown.Item
+                target="_blank"
+                href="https://findpokemon.vercel.app"
               >
                 Pokemon (React)
               </NavDropdown.Item>
