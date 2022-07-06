@@ -113,34 +113,33 @@ const AboutTab = () => {
       <div className="aboutMe intro bot-mar" id="introStory">
         <h3>MY STORY</h3>
         <p>
-          I know what you are going to ask me if you have noticed the titles
-          next to my name.... But yes. I want to be a developer dreadfully. I
-          was a student who liked math and physics in middle and high school.
-          When I had to pick a major at college, I was informed that
-          "Accounting" would be the best choice for me since they are playing
-          with numbers. I believed that until now as you see my license and
-          additional degree.
+          I know what you are curious about.. Yes. I majored in accounting at
+          George Mason University because I liked math and I thought that
+          accounting is math related field. But it was not... Still I persued
+          and advanced my career with CPA and MBA since it was helpful to
+          acquaintance and still okay field (even though it is little bit
+          boring) to work.
         </p>
         <p>
-          However, I happend to experience some of SQL at current company to
-          extract financial data, and it was really interesting. I decided to
-          learn more and started studying other programming languages such as
-          Javascript, React and NodeJS. It was enjoyable process. I enjoy time
-          to deeply think. I even pay to purchase brain-teasing games to rack my
-          brain but in developing environment, I can get unlimited number of
-          brain-teasing tasks for FREE 😁.
-        </p>
-        <p>
-          As I am in a career transition process, I am eager to learn more and
-          willing to spend extra hours to study and contribute to a team. I am a
-          fast learner and catch things quickly. Even though I do not have all
-          the answers at the moment, I will make it happen and come up with
-          solutions.
+          However, I took couple Javascript courses to study because the company
+          wanted to convert the website from Word Press. As I study more, I got
+          more interested in and decided to dive deeper. Now I am in love with
+          coding and really enjoying
         </p>
       </div>
 
       <div className="aboutMe education bot-mar" id="education">
-        <h3>ACHIEVEMENTS</h3>
+        <h3>Education</h3>
+        <div className="achDiv">
+          <h5>Coding Apple</h5>
+          <p>Front-End Development</p>
+        </div>
+
+        <div className="achDiv">
+          <h5>TrueCoders</h5>
+          <p>Web Development</p>
+        </div>
+
         <div className="achDiv">
           <h5>University of Illinois Urbana-Champaign</h5>
           <p>Master of Business Administration</p>
@@ -150,63 +149,28 @@ const AboutTab = () => {
           <h5>George Mason University</h5>
           <p>B.S in Accounting</p>
         </div>
-
-        <div className="achDiv">
-          <h5>Coding Apple</h5>
-          <p>FrontEnd Development</p>
-        </div>
-
-        <div className="achDiv">
-          <h5>TrueCoders</h5>
-          <p>Web Development</p>
-        </div>
-
-        <div className="achDiv">
-          <h5>Licensed CPA in VA</h5>
-        </div>
       </div>
 
       {/* Work Experience */}
       <div className="aboutMe workExperience bot-mar" id="workExperience">
-        <h3 className="compName">SOSI</h3>
+        <h3 className="compName">Nuel Express</h3>
         <p>
-          <h5>Government Contracting Company </h5>
-          <h6>Sr. Accountant</h6>
+          <h6>Director of Operation</h6>
           <li>
-            Utilzed Microsoft SQL to extract and convert financial data to a
-            meaningful information to assist the management for their decision
-            making.
-          </li>
-        </p>
-
-        <h3 className="compName">Lincoln Property Company</h3>
-        <p>
-          <h5>Property Management Company</h5>
-          <h6>Project Accountant</h6>
-          <li>
-            Prepared/provided monthly financial statements and executive summary
-            to clients on time.
+            Created two websites from scratch for the company with Word Press to
+            introduce the company to potential clients
           </li>
           <li>
-            Worked in a team of 7 and deal with multiple clients in portfolio to
-            satisfy their needs.
+            Maintained website and solved issues when the website is not
+            functioning as designed
           </li>
-        </p>
-
-        <h3 className="compName">Pragmatics Inc</h3>
-        <p>
-          <h5>Government Contracting Company</h5>
-          <h6>Accountant</h6>
-          <li>Performed Reconciliation / Billing / Journal Entries / Review</li>
-        </p>
-
-        <h3 className="compName">MSCPA</h3>
-        <p>
-          <h5>Public Accounting Firm</h5>
-          <h6>Tax Accountnat</h6>
           <li>
-            Lead team of 4 to provide best quality of tax consulting and tax
-            return preparation services to clients.
+            Contacted web hosting service provider to request technical support
+            to solve issues
+          </li>
+          <li>
+            • Worked on converting and refactoring the Website from Word Press
+            to React single page application for better experience of clients
           </li>
         </p>
       </div>
