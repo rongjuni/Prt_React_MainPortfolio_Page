@@ -157,21 +157,30 @@ const AboutTab = () => {
         <p>
           <h6>Director of Operation</h6>
           <li>
-            Created two websites from scratch for the company with Word Press to
-            introduce the company to potential clients
+            Published two websites building from scratch for the company with
+            WordPress to introduce the company to potential clients
           </li>
           <li>
-            Maintained website and solved issues when the website is not
-            functioning as designed
+            Implemented multiple plug-ins including shipping tracker and forms
+            to collect users data
           </li>
           <li>
-            Contacted web hosting service provider to request technical support
-            to solve issues
+            Improved the websites based on internal / external users feedback
           </li>
           <li>
-            • Worked on converting and refactoring the Website from Word Press
-            to React single page application for better experience of clients
+            Performed periodic manual testing to make sure everything works
           </li>
+          Maintained website and solved issues when the website is not
+          functioning as designed  Contacted web hosting service provider to
+          request technical support to solve issues
+          <li>
+            Worked on converting and refactoring the Website from Word Press to
+            React single page application for better experience of clients
+          </li>
+          <li>
+            Implemented third-party shipping API to track users live package
+          </li>
+          <li>Implemented RESTful API</li>
         </p>
       </div>
     </div> //ending div
