@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const NavbarComp = () => {
+  let [mode, setMode] = useState("light");
+
   return (
-    <Navbar bg="light" variant="light" expand="lg">
-      <Container>
+    <Navbar bg={mode} variant={mode} expand="lg" sticky="top">
+      <Container className="navbarMain">
         <Navbar.Brand as={Link} to="/">
           🏚️
         </Navbar.Brand>
@@ -52,9 +56,9 @@ const NavbarComp = () => {
                 Nuel Express (Coming Soon)
               </NavDropdown.Item> */}
             </NavDropdown>
-            <Nav.Link as={Link} to="/Board">
+            {/* <Nav.Link as={Link} to="/Board">
               Board
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
