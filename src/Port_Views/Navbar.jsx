@@ -48,7 +48,7 @@ const NavbarComp = () => {
                 Memory Game (React)
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/wip">
+              <NavDropdown.Item href="https://foot-rockers.vercel.app/">
                 FootRockers (Coming Soon)
               </NavDropdown.Item>
 
