@@ -49,7 +49,7 @@ const NavbarComp = () => {
               </NavDropdown.Item>
 
               <NavDropdown.Item href="https://foot-rockers.vercel.app/">
-                FootRockers (Coming Soon)
+                FootRockers (In Process)
               </NavDropdown.Item>
 
               {/* <NavDropdown.Item as={Link} to="/wip">
