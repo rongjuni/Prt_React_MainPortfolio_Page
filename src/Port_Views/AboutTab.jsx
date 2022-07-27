@@ -155,7 +155,7 @@ const AboutTab = () => {
       <div className="aboutMe workExperience bot-mar" id="workExperience">
         <h3 className="compName">Nuel Express</h3>
         <p>
-          <h6>Director of Operation</h6>
+          <h6>Web Developer</h6>
           <li>
             Published two websites building from scratch for the company with
             WordPress to introduce the company to potential clients
