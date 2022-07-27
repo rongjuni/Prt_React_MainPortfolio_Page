@@ -170,9 +170,14 @@ const AboutTab = () => {
           <li>
             Performed periodic manual testing to make sure everything works
           </li>
-          Maintained website and solved issues when the website is not
-          functioning as designed  Contacted web hosting service provider to
-          request technical support to solve issues
+          <li>
+            Maintained website and solved issues when the website is not
+            functioning as designed
+          </li>
+          <li>
+            Contacted web hosting service provider to request technical support
+            to solve issues
+          </li>
           <li>
             Worked on converting and refactoring the Website from Word Press to
             React single page application for better experience of clients
