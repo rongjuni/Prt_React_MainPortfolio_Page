@@ -4,6 +4,7 @@ import "./AboutTab.css";
 import brainImg from "./brain_pic.png";
 import github from "./pictures/github.png";
 import linkedin from "./pictures/linkedin.png";
+import myPicture from "./pictures/myPicture.png";
 
 const AboutTab = () => {
   return (
@@ -47,22 +48,20 @@ const AboutTab = () => {
       </div>
 
       <div className="socialIcons bot-mar" id="introTitle">
-        <span>
+        {/* <span>
           <a href="https://github.com/rongjuni" target="blank">
             <img width="40rem" src={github} alt="github_icon" />
           </a>
         </span>
         <span>
-          <a
-            href="https://www.linkedin.com/in/matthew-seo-cpa-mba-71349bb9/"
-            target="blank"
-          >
+          <a href="https://linkedin.com/in/mattseodev" target="blank">
             <img width="40rem" src={linkedin} alt="linkedin_icon" />
           </a>
-        </span>
+        </span> */}
       </div>
 
       <div className="aboutMe introTitle bot-mar" id="introTitle">
+        <img src={myPicture} className="my-face-picture" alt="myFace" />
         <h1>Matthew Seo CPA MBA</h1>
         <h3>Software Developer</h3>
 

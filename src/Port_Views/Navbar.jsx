@@ -2,13 +2,21 @@ import { useState } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import github from "./pictures/github.png";
+import linkedin from "./pictures/linkedin.png";
 
 const NavbarComp = () => {
   let [mode, setMode] = useState("light");
 
   return (
-    <Navbar bg={mode} variant={mode} expand="lg" sticky="top">
-      <Container className="navbarMain">
+    <Navbar
+      className="navbar-customize"
+      // bg={mode}
+      // variant={mode}
+      expand="lg"
+      sticky="top"
+    >
+      <Container>
         <Navbar.Brand as={Link} to="/">
           🏚️
         </Navbar.Brand>
@@ -41,15 +49,15 @@ const NavbarComp = () => {
                 Japanime (React)
               </NavDropdown.Item>
 
-              <NavDropdown.Item
+              {/* <NavDropdown.Item
                 target="_blank"
                 href="http://numbermemorygame.herokuapp.com"
               >
                 Memory Game (React)
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
 
               <NavDropdown.Item href="https://foot-rockers.vercel.app/">
-                FootRockers (In Process)
+                FootRockers (React)
               </NavDropdown.Item>
 
               {/* <NavDropdown.Item as={Link} to="/wip">
@@ -61,6 +69,18 @@ const NavbarComp = () => {
             </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
+        <div>
+          <span className="navbar-icon-margin">
+            <a href="https://github.com/rongjuni" target="blank">
+              <img width="40rem" src={github} alt="github_icon" />
+            </a>
+          </span>
+          <span>
+            <a href="https://linkedin.com/in/mattseodev" target="blank">
+              <img width="40rem" src={linkedin} alt="linkedin_icon" />
+            </a>
+          </span>
+        </div>
       </Container>
     </Navbar>
   );

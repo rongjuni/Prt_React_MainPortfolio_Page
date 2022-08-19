@@ -28,6 +28,11 @@
     
 }
 
+.my-face-picture{
+    width: 10rem;
+    margin-bottom: 10px;
+}
+
 .bot-mar{
     margin: auto auto 10rem auto;
 }

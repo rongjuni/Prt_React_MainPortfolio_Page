@@ -1,3 +1,7 @@
-.navbarColor{
-    color: white;
+.navbar-icon-margin{
+    margin-right: 10px;
+}
+
+.navbar-customize{
+background-color: #fff !important
 }
