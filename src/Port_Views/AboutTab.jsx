@@ -18,7 +18,7 @@ const AboutTab = () => {
           Me
         </Button>{" "}
         <Button
-          href="#introTitle"
+          href="#IQtestResult"
           variant="outline-secondary"
           className="buttonFont"
         >
@@ -97,7 +97,7 @@ const AboutTab = () => {
         </div>
       </div>
 
-      <div className="IQtestResult bot-mar">
+      <div className="IQtestResult bot-mar" id="IQtestResult">
         <h3>
           <a
             href="https://iq-society.com/Report?code=1652726053718GZDHNYG3VP4F5TA2"
