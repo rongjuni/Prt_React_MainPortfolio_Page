@@ -28,6 +28,10 @@ const NavbarComp = () => {
             </Nav.Link>
 
             <NavDropdown title="Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://foot-rockers.vercel.app/">
+                FootRockers (React)
+              </NavDropdown.Item>
+
               <NavDropdown.Item
                 target="_blank"
                 href="https://deploygossip.ue.r.appspot.com"
@@ -55,10 +59,6 @@ const NavbarComp = () => {
               >
                 Memory Game (React)
               </NavDropdown.Item> */}
-
-              <NavDropdown.Item href="https://foot-rockers.vercel.app/">
-                FootRockers (React)
-              </NavDropdown.Item>
 
               {/* <NavDropdown.Item as={Link} to="/wip">
                 Nuel Express (Coming Soon)
