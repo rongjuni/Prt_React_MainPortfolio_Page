@@ -31,13 +31,13 @@ const Navigation = () => {
       >
         Achievement
       </Button>{" "}
-      <Button
+      {/* <Button
         href="#workExperience"
         variant="outline-secondary"
         className="buttonFont"
       >
         Experience
-      </Button>{" "}
+      </Button>{" "} */}
     </div>
   );
 };

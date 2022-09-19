@@ -21,7 +21,7 @@ const AboutTab = () => {
       <MyStory></MyStory>
       <Education></Education>
 
-      <WorkExp></WorkExp>
+      {/* <WorkExp></WorkExp> */}
     </div> //ending div
   );
 };
